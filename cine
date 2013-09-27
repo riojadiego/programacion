@@ -1,0 +1,38 @@
+
+#include "stdafx.h"
+#include "stdlib.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+{
+ int I,N,edad;
+ float precio,S,pago;
+ S=0;
+
+ cout<<"ingrese el # de butacas";
+ cin>>N;
+ cout<<"ingrese el precio: ";
+ cin>>precio;	
+ for (I=1;I<=N;I++)
+ {
+   do
+	{
+		cout<<"ingrese edad: ";
+		cin>>edad;
+	}
+    while ((edad<0)||(edad>150));
+  if (edad<=12)
+	  pago=precio*0.5;
+  else 
+	  if(edad<=55)
+	     pago=precio;
+	  else
+		 pago=precio*0.20;
+  S=S+pago;
+ }
+  cout<<"el ingreso total es: "<<S;
+  getch();
+}
