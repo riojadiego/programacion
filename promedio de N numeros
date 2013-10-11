@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using  std;
+ 
+int main ()
+{
+	int N;
+	float A,prom,I,S;
+namespace
+	cout<<"ingrese la cantidad de datos N: ";
+	cin>> N;
+	S=0;
+	for(I=1; I<=N; I++)
+	{
+		cout<< "ingrese los numeros: ";
+		cin>>A;
+		S=S+A;
+	}
+    prom=S/N;
+	cout<<"el promedio es: "<<prom;
+	getch();
+
+
+	return 0;
+}
