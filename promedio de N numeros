@@ -2,13 +2,13 @@
 #include "conio.h"
 #include <iostream>
 
-using  std;
+using namespace std;
  
 int main ()
 {
 	int N;
 	float A,prom,I,S;
-namespace
+
 	cout<<"ingrese la cantidad de datos N: ";
 	cin>> N;
 	S=0;
